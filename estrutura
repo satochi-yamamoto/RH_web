@@ -1,0 +1,22 @@
+rh-system/
+├── app/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── routes.py
+│   ├── utils.py
+│   ├── templates/
+│   │   ├── base.html
+│   │   ├── index.html
+│   │   ├── employee.html
+│   │   ├── payroll.html
+│   │   ├── timesheet.html
+│   │   ├── vacations.html
+│   └── static/
+│       ├── css/
+│       │   └── styles.css
+│       ├── js/
+│           └── scripts.js
+├── config.py
+├── run.py
+├── requirements.txt
+└── README.md
