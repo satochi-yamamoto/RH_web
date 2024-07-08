@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Timesheet</h2>
+<form id="timesheet-form" method="post" action="/timesheet">
+    <label for="employee_id">Employee ID:</label>
+    <input type="number" id="employee_id" name="employee_id">
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date">
+    <label for="check_in">Check In:</label>
+    <input type="time" id="check_in" name="check_in">
+    <label for="check_out">Check Out:</label>
+    <input type="time" id="check_out" name="check_out">
+    <button type="submit">Add Timesheet Entry</button>
+</form>
+
+<ul id="timesheet-list">
+    <!-- Timesheet list will be populated here -->
+</ul>
+{% endblock %}

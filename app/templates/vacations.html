@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Vacations</h2>
+<form id="vacation-form" method="post" action="/vacations">
+    <label for="employee_id">Employee ID:</label>
+    <input type="number" id="employee_id" name="employee_id">
+    <label for="start_date">Start Date:</label>
+    <input type="date" id="start_date" name="start_date">
+    <label for="end_date">End Date:</label>
+    <input type="date" id="end_date" name="end_date">
+    <button type="submit">Add Vacation</button>
+</form>
+
+<ul id="vacation-list">
+    <!-- Vacation list will be populated here -->
+</ul>
+{% endblock %}

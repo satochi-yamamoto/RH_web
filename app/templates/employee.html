@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Employees</h2>
+<form id="employee-form" method="post" action="/employees">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <label for="position">Position:</label>
+    <input type="text" id="position" name="position">
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" name="salary">
+    <label for="photo">Photo:</label>
+    <input type="file" id="photo" name="photo">
+    <button type="submit">Add Employee</button>
+</form>
+
+<ul id="employee-list">
+    <!-- Employee list will be populated here -->
+</ul>
+{% endblock %}
